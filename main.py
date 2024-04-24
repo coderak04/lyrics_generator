@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.models import load_model
 
 def load_data_and_model():
-    dataset = pd.read_csv('/home/yas/clg_codes/lyrics_generator/lyrics_generator/data.csv')
+    dataset = pd.read_csv('lyrics_generator/data.csv')
     dataset = dataset.head(500)
     dataset['Word_Count'] = dataset['lyrics'].apply(lambda x: len(str(x).split()))
 
@@ -24,7 +24,7 @@ def load_data_and_model():
     max_sequence_length = max([len(seq) for seq in sequences_padded])
     sequences_padded = np.array(pad_sequences(sequences_padded, maxlen=max_sequence_length, padding='pre'))
     
-    model = load_model('/home/yas/clg_codes/lyrics_generator/lyrics_generator/song_lyrics_generator.h5')
+    model = load_model('lyrics_generator/song_lyrics_generator.h5')
     return token_maker, max_sequence_length, model
 
 def complete_this_song(model, token_maker, max_sequence_length, starting_text, num_words):
