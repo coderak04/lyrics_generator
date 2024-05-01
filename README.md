@@ -1,7 +1,7 @@
 # LyricalFlow: An LSTM Based Lyrics Generator
 
 ### Introduction
-This our Natrual Language course project, that takes intput any sentance and genrates lyrics.
+This is our Natural Language Processing course project, that takes input of any sentance and genrates lyrics.
 
 
 ### Requirements
