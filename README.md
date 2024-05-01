@@ -34,8 +34,8 @@ pip install flask
 python3 frontend.py
 ```
 ### Description
-The main.ipynb contains the the training process of the Lyrics Generator.
-The main.py contains the backend, frontend.py the flask implentation for the user interface.
+The main.ipynb contains the training process of the Lyrics Generator.
+The main.py contains the backend, frontend.py is the flask implentation for the user interface.
 
 ---
 
